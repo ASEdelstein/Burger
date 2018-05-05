@@ -1,0 +1,13 @@
+<h1>EAT-DA-BURGER</h1>
+
+<ul>
+    {{#each burgers}}
+    <li>
+        <p>
+            {{this.id}}. {{this.burger}}
+        
+            <button data-burgerid="{{this.id}}" class="addburger">Add a Burger</button>
+        </p>
+    </li>
+    {{/each}}
+</ul>
